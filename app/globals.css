@@ -1,26 +1,44 @@
 @import "tailwindcss";
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.intro-section {
+  max-width: 700px; /* Adjust width (controls left-right spacing) */
+  margin: 0 auto; /* Centers the div horizontally */
+  padding: 2rem; /* Optional: adds some space around */
+  position: relative; /* Allows you to shift it using top/left */
+  top: 50px; /* Move it vertically */
+  left: -10px; /* Adjust horizontal offset if needed */
+}
+.logo {
+  width: 55px;  /* adjust width as needed */
+  height: auto;  /* maintain aspect ratio */
+}
+.job {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.job p {
+  margin: 0;         /* removes default margin */
+  line-height: 1.2;  /* reduces vertical spacing */
+}
+.job1 {
+  color: darkgray;
+  margin-top: 10px;
+  margin-left: 180px;
+}
+.bold {
+  font-size: 18px;
+  font-weight: bold;
+}
+.btn {
+  background-color: black;   /* Black background */
+  color: white;              /* White text */
+  font-weight: bold;         /* Bold text */
+  border-radius: 8px;        /* Rounded corners */
+  padding: 7px 14px;         /* Some padding */
+  border: none;              /* No border */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
