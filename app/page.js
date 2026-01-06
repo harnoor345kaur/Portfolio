@@ -30,7 +30,7 @@ const workExperience = [
 ];
 
 const technicalSkills = [
-  "Python", "C++", "JavaScript", "SQL", "Tailwind CSS", "HTML", "R", "DSA", "NumPy", "Pandas", "SciKit Learn", "Matplotlib", "Streamlit", "PostgreSQL", "Flask", "ReactJS", "NextJS", "GenAI", "RESTful API Integration", "Beautiful Soup"
+  "Python", "C++", "JavaScript", "SQL", "Tailwind CSS", "NumPy", "Pandas", "SciKit Learn", "Matplotlib", "Streamlit", "Flask", "PostgreSQL", "ReactJS", "NextJS", "FastAPI", ".NET", "RESTful API", "LangChain"
 ];
 
 const ProjectLink = ({ type, href }) => {
@@ -64,7 +64,7 @@ const projectData = [
     dates: "Jan 2025 - Feb 2025",
     description: "Developed a smart assistant bot to simplify the process of understanding tax and salary forms by providing summary (in proper tabular form) of documents uploaded.",
     vidUrl: "/taxgpt.mp4", // Placeholder URL
-    skills: ["Python", "RESTful API", "HTML", "CSS"],
+    skills: ["Streamlit", "Python", "Gemini API", "HTML", "CSS"],
     links: [
       { type: "Source", href: "https://github.com/harnoor345kaur/GGH-2025" }
     ],
@@ -74,21 +74,31 @@ const projectData = [
     dates: "May 2025 - June 2025",
     description: "Aimed at saving time in a corporate environment by providing user a summary of emails received on daily basis by leveraging the power of GenAI for summarizing the emails.",
     vidUrl: "/smart.mp4",
-    skills: ["Next.js", "React.js", "TailwindCSS", "RESTful API", "GenAI", "Flask"],
+    skills: ["Next.js", "React.js", "Python", "Flask", "GenAI", "Firebase Auth"],
     links: [
       { type: "Website", href: "https://drive.google.com/file/d/1LBXxdqKO-Jm3EGI36YF_51pznb8toemJ/view" }
     ],
   },
   {
     title: "Detection of Parkinson's Disease",
-    dates: "October 2025 - Present",
-    description: "Designing a multimodal deep learning framework capable of processing multiple brain imaging modalities (MRI, fMRI, DTI, etc.) for early and accurate detection of Parkinson’s disease.",
+    dates: "October 2025 - Dec 2025",
+    description: "Designed a multimodal deep learning framework which processed multiple brain imaging modalities (MRI, fMRI, DTI, etc.) for early and accurate detection of Parkinson’s disease.",
     vidUrl: "https://placehold.co/400x250/A0AEC0/ffffff?text=Video+Unavailable",
-    skills: ["Python", "Deep Learning", "CNN", "PPMI Dataset"],
+    skills: ["Python", "State-of-the-art DL models", "Transformers", "PPMI Dataset"],
     links: [
-      { type: "Website", href: "" }
+      { type: "Website", href: "https://www.canva.com/design/DAG123_uW4U/SjsGijoA3cK5AcQJIPgXZg/edit?utm_content=DAG123_uW4U&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" }
     ],
   },
+  {
+    title: "AI Content Auditor",
+    dates: "October 2025 - Dec 2025",
+    description: "Built an end-to-end RAG system to audit LLM outputs by extracting factual claims and calculating their Risk, Overconfidence and Hallucination scores to ensure user publishes content safely.",
+    vidUrl: "/audit.mp4",
+    skills: ["RAG", "FastAPI", "NLP", "FAISS VectorStore", "Docker", "ReactJS", "NextJS"],
+    links: [
+      { type: "Website", href: "https://drive.google.com/file/d/1n0ZxRr085qYi0wfWBWxms21L8My3ivbt/view?usp=sharing" }
+    ],
+  }
 ];
 
 /**
@@ -275,7 +285,7 @@ const App = () => {
                 />
                 <span className="text-gray-800 text-[19px]">
                   <span className="bold">LeetCode: </span> 
-                  260+ problems solved
+                  300+ problems solved
                 </span>
               </div>
 
@@ -288,7 +298,7 @@ const App = () => {
                 />
                 <span className="text-gray-800 text-[19px]">
                   <span className="bold">GFG: </span>
-                  75+ problems solved
+                  100+ problems solved
                 </span>
               </div>
             </div>
